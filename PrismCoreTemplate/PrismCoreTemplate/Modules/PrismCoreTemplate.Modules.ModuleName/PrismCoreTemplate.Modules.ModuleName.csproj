@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Prism.Wpf" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\PrismCoreTemplate.Core\PrismCoreTemplate.Core.csproj" />
+		<ProjectReference
+			Include="..\..\Services\PrismCoreTemplate.Services.Interfaces\PrismCoreTemplate.Services.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <AbpVersion>8.3.2</AbpVersion>
+  </PropertyGroup>
+  <ItemGroup Label="MvvM">
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.2.2 " />
+  </ItemGroup>
+  <ItemGroup Label="Ui">
+    <PackageVersion Include="WPF-UI" Version="3.0.5" />
+  </ItemGroup>
+  <ItemGroup Label="DI and DDD">
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageVersion Label="Abp" Include="Volo.Abp" Version="$(AbpVersion)" />
+    <PackageVersion Label="Abp" Include="Volo.Abp.Core" Version="8.3.2" />
+    <PackageVersion Label="Abp" Include="Volo.Abp.Autofac" Version="8.3.2" />
+    <PackageVersion Label="Abp" Include="Volo.Abp.Json.Newtonsoft" Version="8.3.2" />
+  </ItemGroup>
+  <ItemGroup Label="Logging">
+    <PackageVersion Include="Serilog" Version="4.0.2" />
+    <PackageVersion Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+    <PackageVersion Include="Serilog.Extensions.Logging" Version="8.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Async" Version="2.0.0" />
+    <PackageVersion Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Console" Version="6.0.0" />
+  </ItemGroup>
+</Project>

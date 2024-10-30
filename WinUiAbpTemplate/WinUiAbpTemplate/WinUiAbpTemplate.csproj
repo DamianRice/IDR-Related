@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<ApplicationIcon>wpfui-icon.ico</ApplicationIcon>
+		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="wpfui-icon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp" />
+		<PackageReference Include="Volo.Abp.Autofac" />
+		<PackageReference Include="Volo.Abp.Json.Newtonsoft" />
+		<PackageReference Include="WPF-UI" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" />
+		<PackageReference Include="CommunityToolkit.Mvvm" />
+		<PackageReference Include="Serilog" />
+		<PackageReference Include="Serilog.Extensions.Hosting" />
+		<PackageReference Include="Serilog.Extensions.Logging" />
+		<PackageReference Include="Serilog.Sinks.Async" />
+		<PackageReference Include="Serilog.Sinks.File" />
+		<PackageReference Include="Serilog.Sinks.Console" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Assets\wpfui-icon-256.png" />
+		<None Remove="Assets\wpfui-icon-1024.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\WinUiAbpTempalte.Application\WinUiAbpTemplate.Application.csproj" />
+	  <ProjectReference Include="..\WinUiAbpTemplate.Application.Abstract\WinUiAbpTemplate.Application.Abstract.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Assets\wpfui-icon-256.png" />
+		<Resource Include="Assets\wpfui-icon-1024.png" />
+	</ItemGroup>
+
+</Project>
